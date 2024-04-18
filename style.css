@@ -3,13 +3,15 @@
   padding:0;
 }
 
-/* @media(max-width: 768px) {
+/* meda funkar som en "if" */
+
+@media(max-width: 768px) {
     
 }
 
 @media(max-width: 500px) {
     
-} */
+}
 body {
   background: linear-gradient(-40deg, #a85b43, #ce3872, #22a6d6, #19af8c);
   background-size: 400% 400%;
@@ -29,7 +31,11 @@ body {
   }
 }
 nav{
+ display: flex;
+  align-items: center;
+  height: 100px;
   background-color: rgb(55, 74, 117);
+  width: 100%;
 }
 nav a:hover {
   background-color: #ddd;
@@ -41,6 +47,7 @@ ul{
   display:flex;
   align-items: center;
   justify-content: center;
+ width: 100%;
 }
 ul li{
   color: rgb(255, 255, 255);
@@ -48,34 +55,54 @@ ul li{
     padding: 0 2rem;
     font-size: large;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+
 }
 nav a {
- 
-  display: block;
+ align-items: center;
+ justify-content: center;
+  display: flex;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
-
+#upper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 
 nav a:hover {
   
   color: black;
 }
 footer{
-  background-color:rgb(55, 74, 117) ;
+background-color:rgb(55, 74, 117) ;
 
- height:100px;
+ height: 150px;
 }
-
+#footerlist img{
+  width: 50px;
+  display: flex;
+margin-top: 45px;
+  }
 #container{
-  min-height:100%;
- 
+ height:100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
 }
-
 
 #div1{
+  gap: 4rem;
+  align-items: center;
+  margin-left:30px;
+  flex-shrink: 0;
+  position: absolute;
+}
+/* #div1{
   background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(22,97,87,1) 35%, rgba(0,212,255,1) 100%);
 color: white;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -83,18 +110,18 @@ display: flex;
 padding-left: 100px;
 padding-top: 10px;
 padding-bottom: 10px;
+justify-content:flex-end;
+gap: 4rem;
 align-items: center;
-justify-content: center;
-
-}
-#div2{
+} */
+/* #div2{
   background: linear-gradient(90deg, rgb(93, 90, 150) 0%, rgba(112,124,146,1) 35%, rgba(0,212,255,1) 100%);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 padding-left: 10px;
 padding-top: 10px;
 padding-bottom: 10px;
 display: inline-block;
-}
+} */
 h2{
   color:white;
 }
